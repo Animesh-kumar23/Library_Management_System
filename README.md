@@ -135,6 +135,7 @@ Request Body: { email, password }
 Response: JWT token.
 POST /api/auth/register (Admin Only)
 
+
 ### Register a new user.
 Request Body: { email, password, role (admin/user) }
 Response: Success message.
@@ -172,15 +173,30 @@ Frontend Components
 
 ### Home
 A landing page that introduces the system and its features.
+![a](https://github.com/Animesh-kumar23/library_management_system/blob/main/Screenshot%202025-01-08%20060055.png)
+
 
 ### Login
 A login page where users can authenticate themselves.
+![a](https://github.com/Animesh-kumar23/library_management_system/blob/main/Screenshot%202025-01-08%20060352.png)
 
 ### BookList
 Displays the list of books with options to borrow or return books.
+![a](https://github.com/Animesh-kumar23/library_management_system/blob/main/Screenshot%202025-01-08%20060307.png)
 
 ### BookCard
 Displays individual book details and borrow/return buttons.
+![a](https://github.com/Animesh-kumar23/library_management_system/blob/main/Screenshot%202025-01-08%20060307.png)
+
+### Add new book (admin only)
+![a](https://github.com/Animesh-kumar23/library_management_system/blob/main/Screenshot%202025-01-08%20060143.png)
+
+### Delete Book (ADMIN ONLY)
+![a](https://github.com/Animesh-kumar23/library_management_system/blob/main/Screenshot%202025-01-08%20060324.png)
+
+### Register New user
+# if user role is admin, it is to be accepted by another user by admin role first, if new user role is user, then no need for that
+![a](https://github.com/Animesh-kumar23/library_management_system/blob/main/Screenshot%202025-01-08%20060405.png)
 
 ### Contributing
 We welcome contributions to improve the project. To contribute:
