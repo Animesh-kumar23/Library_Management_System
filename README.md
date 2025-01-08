@@ -9,6 +9,7 @@ A web-based Library Management System built with the MERN stack (MongoDB, Expres
 - View all books in the library with their details.
 - Manage transactions, such as borrowing and returning books.
 
+
 ### User Features
 - Browse and view books available in the library.
 - Borrow and return books.
@@ -49,23 +50,32 @@ Make sure you have the following installed on your machine:
    git clone https://github.com/your-username/library-management-system.git
 Install dependencies for both frontend and backend
 
-Navigate to the project directory:
+### Navigate to the project directory:
 
-bash
+```bash
 Copy code
 cd library-management-system
+```
 ### First, install the backend dependencies:
 
-bash
+```bash
 Copy code
 cd backend
 npm install
+```
+### Install nodemon as dev dependency
+```bash
+Copy code
+cd backend
+npm i nodemon
+```
 Then, navigate to the frontend directory and install its dependencies:
 
-bash
+```bash
 Copy code
 cd ../frontend
 npm install
+```
 Running the Application
 To run the application, follow these steps:
 
@@ -73,20 +83,22 @@ To run the application, follow these steps:
 
 In the backend directory:
 
-bash
+```bash
 Copy code
 cd backend
 npm start
+```
 The backend should now be running at http://localhost:5000.
 
 #Start the Frontend
 
 In the frontend directory:
 
-bash
+```bash
 Copy code
 cd frontend
 npm start
+```
 The frontend should now be running at http://localhost:3000.
 
 Open your browser and navigate to http://localhost:3000 to see the application in action.
