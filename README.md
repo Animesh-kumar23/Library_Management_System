@@ -106,97 +106,96 @@ Open your browser and navigate to http://localhost:3000 to see the application i
 Environment Variables
 You will need to set up the following environment variables for both backend and frontend.
 
-Backend
+###Backend
 Create a .env file in the backend directory and add:
-
+```
 env
 Copy code
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret_key
-Frontend
+```
+###Frontend
 If you are using environment variables on the frontend, create a .env file in the frontend directory and add:
-
+```
 env
 Copy code
 REACT_APP_API_URL=http://localhost:5000/api
-Database Setup
+```
+###Database Setup
 Make sure you have MongoDB running locally, or use a cloud MongoDB provider like MongoDB Atlas. Create a database called library and ensure the correct connection string is placed in the .env file.
 
-API Endpoints
-Authentication
+###API Endpoints
+#Authentication
 POST /api/auth/login
 
-Login to the system.
+###Login to the system.
 Request Body: { email, password }
 Response: JWT token.
 POST /api/auth/register (Admin Only)
 
-Register a new user.
+###Register a new user.
 Request Body: { email, password, role (admin/user) }
 Response: Success message.
 Books
 GET /api/books
 
-Get the list of all books.
+###Get the list of all books.
 Response: Array of books with details.
 POST /api/books (Admin Only)
 
-Add a new book to the library.
+###Add a new book to the library.
 Request Body: { title, author, genre, publicationYear, availabilityStatus, totalCopies }
 Response: Added book details.
 PUT /api/books/:id (Admin Only)
 
-Edit a book's details.
+###Edit a book's details.
 Request Body: { title, author, genre, publicationYear, availabilityStatus, totalCopies }
 Response: Updated book details.
 DELETE /api/books/:id (Admin Only)
 
-Delete a book from the library.
+###Delete a book from the library.
 Response: Success message.
 Transactions
 POST /api/transaction/borrow
 
-Borrow a book.
+###Borrow a book.
 Request Body: { bookId, userId }
 Response: Success message.
 POST /api/transaction/return
 
-Return a borrowed book.
+###Return a borrowed book.
 Request Body: { bookId, userId }
 Response: Success message.
 Frontend Components
 
-Home
+###Home
 A landing page that introduces the system and its features.
 
-Login
+###Login
 A login page where users can authenticate themselves.
 
-BookList
+###BookList
 Displays the list of books with options to borrow or return books.
 
-AddBook
-A form that allows the admin to add a new book.
-
-BookCard
+###BookCard
 Displays individual book details and borrow/return buttons.
 
-Contributing
+###Contributing
 We welcome contributions to improve the project. To contribute:
 
-Fork the repository.
-Create a new branch (git checkout -b feature-name).
-Make your changes and commit them (git commit -am 'Add new feature').
-Push to the branch (git push origin feature-name).
-Create a pull request.
+###Fork the repository.
+#Create a new branch (git checkout -b feature-name).
+#Make your changes and commit them (git commit -am 'Add new feature').
+#Push to the branch (git push origin feature-name).
+#Create a pull request.
 
 
 
-Acknowledgments
-Thanks to MongoDB for providing the database service.
-Thanks to React for the powerful frontend framework.
-Thanks to Express.js for the backend framework.
+###Acknowledgments
+1. Thanks to MongoDB for providing the database service.
+2. Thanks to React for the powerful frontend framework.
+3. Thanks to Express.js for the backend framework.
 
 
 ### Key Points:
