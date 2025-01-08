@@ -1,0 +1,63 @@
+/* navbar.css */
+.navbar {
+    background-color: #ADD8E6; /* Light blue background */
+    padding: 10px 20px;
+  }
+  
+  .navbar .navbar-brand {
+    color: black; /* Set the brand text color to black */
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .navbar .navbar-brand:hover {
+    color: #bdc3c7; /* Change brand text color to grayish on hover */
+  }
+  
+  .navbar .navbar-nav {
+    display: flex; /* Flexbox for nav items */
+    flex-direction: row; /* Ensure nav items are in a horizontal row */
+    margin-left: 0; /* Ensure the nav items are aligned to the left */
+  }
+  
+  .navbar .navbar-nav .nav-link {
+    color: black; /* Set the nav link text color to black */
+    font-size: 16px;
+    margin-left: 20px; /* Add space between nav items */
+    padding: 8px 15px;
+  }
+  
+  .navbar .navbar-nav .nav-link:hover {
+    color: #bdc3c7; /* Change nav link text color to grayish on hover */
+    background-color: transparent; /* No background color change on hover */
+  }
+  
+  .navbar .navbar-nav .btn-link {
+    color: black; /* Set the signout button text color to black */
+    font-size: 16px;
+  }
+  
+  .navbar .navbar-nav .btn-link:hover {
+    color: #bdc3c7; /* Change signout button color to grayish on hover */
+    background-color: transparent; /* No background color change on hover */
+  }
+  
+  .navbar .navbar-nav .nav-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-toggler-icon {
+    background-color: white;
+  }
+  
+  @media (max-width: 767px) {
+    .navbar .navbar-nav {
+      text-align: left; /* Ensure items are aligned to the left on smaller screens */
+    }
+  
+    .navbar .navbar-nav .nav-link {
+      margin: 10px 0;
+    }
+  }
+  
