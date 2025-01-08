@@ -130,72 +130,72 @@ Make sure you have MongoDB running locally, or use a cloud MongoDB provider like
 #Authentication
 POST /api/auth/login
 
-### Login to the system.
+## Login to the system.
 Request Body: { email, password }
 Response: JWT token.
 POST /api/auth/register (Admin Only)
 
 
-### Register a new user.
+## Register a new user.
 Request Body: { email, password, role (admin/user) }
 Response: Success message.
 Books
 GET /api/books
 
-### Get the list of all books.
+## Get the list of all books.
 Response: Array of books with details.
 POST /api/books (Admin Only)
 
-### Add a new book to the library.
+## Add a new book to the library.
 Request Body: { title, author, genre, publicationYear, availabilityStatus, totalCopies }
 Response: Added book details.
 PUT /api/books/:id (Admin Only)
 
-### Edit a book's details.
+## Edit a book's details.
 Request Body: { title, author, genre, publicationYear, availabilityStatus, totalCopies }
 Response: Updated book details.
 DELETE /api/books/:id (Admin Only)
 
-### Delete a book from the library.
+## Delete a book from the library.
 Response: Success message.
 Transactions
 POST /api/transaction/borrow
 
-### Borrow a book.
+## Borrow a book.
 Request Body: { bookId, userId }
 Response: Success message.
 POST /api/transaction/return
 
-### Return a borrowed book.
+## Return a borrowed book.
 Request Body: { bookId, userId }
 Response: Success message.
 Frontend Components
 
-### Home
+## Home
 A landing page that introduces the system and its features.
 ![a](https://github.com/Animesh-kumar23/library_management_system/blob/main/Screenshot%202025-01-08%20060055.png)
 
 
-### Login
+## Login
 A login page where users can authenticate themselves.
 ![a](https://github.com/Animesh-kumar23/library_management_system/blob/main/Screenshot%202025-01-08%20060352.png)
 
-### BookList
+## BookList
 Displays the list of books with options to borrow or return books.
 ![a](https://github.com/Animesh-kumar23/library_management_system/blob/main/Screenshot%202025-01-08%20060307.png)
 
-### BookCard
+## BookCard
 Displays individual book details and borrow/return buttons.
 ![a](https://github.com/Animesh-kumar23/library_management_system/blob/main/Screenshot%202025-01-08%20060307.png)
 
-### Add new book (admin only)
+## Add new book (admin only)
 ![a](https://github.com/Animesh-kumar23/library_management_system/blob/main/Screenshot%202025-01-08%20060143.png)
 
-### Delete Book (ADMIN ONLY)
+## Delete Book (ADMIN ONLY)
 ![a](https://github.com/Animesh-kumar23/library_management_system/blob/main/Screenshot%202025-01-08%20060324.png)
 
-### Register New user
-# if user role is admin, it is to be accepted by another user by admin role first, if new user role is user, then no need for that
+## Register New user
+### if user role is admin, it is to be accepted by another user by admin role first, if new user role is user, then no need for that
 ![a](https://github.com/Animesh-kumar23/library_management_system/blob/main/Screenshot%202025-01-08%20060405.png)
 
 ### Contributing
