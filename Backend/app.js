@@ -1,4 +1,5 @@
 require('dotenv').config(); // Ensure dotenv is loaded at the top
+//MONGO_URI=mongodb://localhost:27017/library
 
 const EventEmitter = require('events');
 EventEmitter.defaultMaxListeners = 20; // Increase the limit to 20 or any appropriate number
