@@ -39,7 +39,7 @@ const BookList = () => {
         const userId = decodedToken.user.id;
 
         await api.post(
-          'http://localhost:5000/api/transaction/borrow',
+          'https://library-management-system-2-09ze.onrender.com/api/transaction/borrow',
           { bookId, userId },
           {
             headers: {
@@ -70,7 +70,7 @@ const BookList = () => {
         const userId = decodedToken.user.id;
 
         await api.post(
-          'http://localhost:5000/api/transaction/return',
+          'https://library-management-system-2-09ze.onrender.com/api/transaction/return',
           { bookId, userId },
           {
             headers: {
@@ -98,7 +98,7 @@ const BookList = () => {
     try {
       const token = localStorage.getItem('token');
       if (token) {
-        await api.delete(`http://localhost:5000/api/books/${bookId}`, {
+        await api.delete(`https://library-management-system-2-09ze.onrender.com/api/books/${bookId}`, {
           headers: {
             Authorization: `Bearer ${token}`,
             'Content-Type': 'application/json',
