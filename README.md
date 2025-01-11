@@ -85,29 +85,31 @@ To run the application, follow these steps:
 #Start the Backend
 
 In the backend directory:
+first adjust in code where you want to run the backend, at which port.
 
 ```bash
 Copy code
 cd backend
-npm start
+nodemon .\app.js
 ```
-The backend should now be running at http://localhost:5000.
+
 
 #Start the Frontend
+first adjust in code where you want to run the frontend, at which port.
 
 In the frontend directory:
 
 ```bash
 Copy code
 cd frontend
-npm start
+npm run start
 ```
-The frontend should now be running at http://localhost:3000.
-
-Open your browser and navigate to http://localhost:3000 to see the application in action.
 
 # Environment Variables
 You will need to set up the following environment variables for both backend and frontend.
+JWT secret key
+port for backend
+mongodb database connection link
 
 ### Backend
 Create a .env file in the backend directory and add:
