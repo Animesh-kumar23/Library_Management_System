@@ -13,7 +13,7 @@ const Register = () => {
   const handleRegister = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('https://library-management-system-2-09ze.onrender.com/api/auth/register', {
+      await axios.post('https://library-management-system-3-ciao.onrender.com/api/auth/register', {
         name,
         email,
         password,
