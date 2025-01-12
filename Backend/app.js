@@ -17,7 +17,7 @@ const app = express();
 
 // Enable CORS for frontend (React is usually on port 3000)
 app.use(cors({
-  origin: 'https://library-management-system-bkm3sn7o1-animeshs-projects-fc58df25.vercel.app', // Adjust the frontend URL if needed
+  origin: 'https://powerful-tundra-83274-2fcf468e691d.herokuapp.com', // Adjust the frontend URL if needed
   methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allow the necessary HTTP methods
   credentials: true, // Allow cookies and authorization headers
 }));
