@@ -11,7 +11,7 @@ const BorrowBook = () => {
   useEffect(() => {
     const fetchBooks = async () => {
       try {
-        const response = await axios.get('https://library-management-system-2-09ze.onrender.com/api/books');
+        const response = await axios.get('https://library-management-system-3-ciao.onrender.com/api/books');
         setBooks(response.data);
       } catch (err) {
         console.error(err.message);
@@ -29,7 +29,7 @@ const BorrowBook = () => {
         const userId = decodedToken.userId;
 
         await axios.post(
-          'https://library-management-system-2-09ze.onrender.com/api/transaction/borrow',
+          'https://library-management-system-3-ciao.onrender.com/api/transaction/borrow',
           { bookId, userId },
           {
             headers: {
