@@ -3,8 +3,8 @@
 A web-based Library Management System built with the MERN stack (MongoDB, Express.js, React, Node.js). This system helps libraries manage books, users, transactions, and administrative tasks like adding, deleting, and updating book details.
 
 ## Live website-
-I deployed this site's frontend using Heroku backend using Render.
-https://powerful-tundra-83274-2fcf468e691d.herokuapp.com/
+- I deployed this site's frontend using Heroku backend using Render.
+- https://powerful-tundra-83274-2fcf468e691d.herokuapp.com/
 
 ## Features
 
