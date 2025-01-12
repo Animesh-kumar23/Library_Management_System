@@ -67,11 +67,33 @@ Copy code
 cd backend
 npm install
 ```
+### Install express
+```bash
+Copy code
+cd backend
+npm install express
+```
+
+### Install jsonwebtoken and bcrypt
+```bash
+Copy code
+cd backend
+npm install jsonwebtoken bcrypt
+```
+
+
 ### Install nodemon as dev dependency
 ```bash
 Copy code
 cd backend
 npm i nodemon
+```
+
+### Install other dependencies
+```bash
+Copy code
+cd backend
+npm install cors dotenv mongoose express-validator
 ```
 Then, navigate to the frontend directory and install its dependencies:
 
@@ -79,6 +101,18 @@ Then, navigate to the frontend directory and install its dependencies:
 Copy code
 cd ../frontend
 npm install
+```
+### Install jwt-decode
+```bash
+Copy code
+cd backend
+npm install jwt-decode
+```
+### Install other dependencies
+```bash
+Copy code
+cd backend
+npm install assert axios bootstrap browserify-zlib concurrently cra-template dotenv https-browserify react react-dom react-router-dom react-scripts stream-browserify stream-http url util
 ```
 Running the Application
 To run the application, follow these steps:
@@ -96,14 +130,15 @@ nodemon .\app.js
 
 
 #Start the Frontend
-first adjust in code where you want to run the frontend, at which port.
+- first adjust in code where you want to run the frontend, at which port.
+- then adjust the port of backend.
 
 In the frontend directory:
-
+- if you are running both frontend and backend on your local host, use this command
 ```bash
 Copy code
 cd frontend
-npm run start
+npm run both
 ```
 
 # Environment Variables
